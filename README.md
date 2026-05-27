@@ -12,12 +12,13 @@ Ten rules. One overlay for the Korean market. One enforcement map. No fluff.
 
 ## One-sentence conclusion
 
-> Great investing is buying an understandable, high-quality asset below intrinsic value, with a margin of safety, holding it long enough to compound, controlling emotion and costs along the way — and, when none of that genuinely applies, defaulting to low-cost, broad, diversified ownership.
+> Great investing is preserving capital first, then buying understandable, high-quality assets below intrinsic value with a margin of safety, holding them long enough to compound, controlling emotion and costs along the way — and, when none of that genuinely applies, defaulting to low-cost, broad, diversified ownership.
 
 ## Why
 
 LLM-driven investment agents fail in predictable ways:
 
+- They optimize for return before they have proven they cannot permanently lose the capital.
 - They confuse a rising price with rising value.
 - They build a "thesis" by stacking peer multiples and recent narrative.
 - They mistake comfort with a name for circle-of-competence.
@@ -62,14 +63,14 @@ INVESTMENT_RULES_DEST=~/my/path ./install.sh
 
 ## The Ten Commandments
 
-1. **Buy Value, Not Price.** Start from "what can this earn?" The price sets the discount; it is not the argument. — *Graham, Marks*
-2. **Demand a Margin of Safety.** Pay enough below intrinsic value that being wrong is survivable. The noisier the input, the wider the margin. — *Graham, Buffett*
-3. **A Stock Is a Piece of a Business.** Would you buy the whole company at this implied valuation? If not, do not buy a share of it either. — *Buffett (Owner's Manual)*
-4. **Stay in Your Circle of Competence.** Only own what you can explain in one paragraph: revenue, customers, competition, destructors. "I don't know" is a valid action. — *Buffett, Lynch*
-5. **Quality at a Fair Price Beats Mediocrity at a Discount.** Durable moat, high ROIC across cycles, pricing power, long reinvestment runway. Cheap is the floor; quality is the multiplier. — *Fisher, Buffett, Munger*
-6. **Verify Management and Capital Allocation.** Owners decide what happens to the cash. Look at insider ownership, buyback prices, acquisition track record, dilution, debt discipline, shareholder communication. — *Buffett*
-7. **Compound Long-Term; Don't Get in the Way.** Sell only when the thesis is broken, the quality is broken, or a clearly better opportunity exists. Time is not a signal. — *Munger, Buffett*
-8. **Risk Is the Probability of Permanent Loss, Not Volatility.** Volatility is the fee; permanent impairment is the end of compounding. Size so you can hold through a 30–50% drawdown. — *Marks*
+1. **Capital Preservation First.** Never permanent loss. A 50% drawdown takes a 100% gain to break even. Capital preservation is the umbrella goal; every other rule is a technique that serves it. The relevant kind of loss is *permanent* impairment, not volatility — but volatility becomes permanent loss if the position is sized so the investor is forced to sell. — *Buffett (Rule No. 1), Marks*
+2. **Buy Value, Not Price.** Start from "what can this earn?" The price sets the discount; it is not the argument. — *Graham, Marks*
+3. **Demand a Margin of Safety.** Pay enough below intrinsic value that being wrong is survivable. The noisier the input, the wider the margin. — *Graham, Buffett*
+4. **A Stock Is a Piece of a Business.** Would you buy the whole company at this implied valuation? If not, do not buy a share of it either. — *Buffett (Owner's Manual)*
+5. **Stay in Your Circle of Competence.** Only own what you can explain in one paragraph: revenue, customers, competition, destructors. "I don't know" is a valid action. — *Buffett, Lynch*
+6. **Quality at a Fair Price Beats Mediocrity at a Discount.** Durable moat, high ROIC across cycles, pricing power, long reinvestment runway. Cheap is the floor; quality is the multiplier. — *Fisher, Buffett, Munger*
+7. **Verify Management and Capital Allocation.** Owners decide what happens to the cash. Look at insider ownership, buyback prices, acquisition track record, dilution, debt discipline, shareholder communication. — *Buffett*
+8. **Compound Long-Term; Don't Get in the Way.** Sell only when the thesis is broken, the quality is broken, or a clearly better opportunity exists. Time is not a signal. — *Munger, Buffett*
 9. **Use Cycles and Crowd Psychology Against Themselves.** Second-level thinking: the consensus is already in the price. Size down in euphoria; look hardest at quality assets in panic. — *Marks, Soros, Buffett*
 10. **Without a Real Edge, Default to Low-Cost Diversification.** Edge — informational, analytical, or behavioral — must be earned, not assumed. If it is absent, broad, low-cost, long-held index ownership is the honest answer. — *Bogle, Malkiel*
 
@@ -79,23 +80,23 @@ Full text and per-rule checklists with deterministic gates live under [`rules/co
 
 If only five rules survive, these are load-bearing:
 
-- **Rule 1** — value, not price.
-- **Rule 2** — margin of safety.
-- **Rule 3** — stock is a business.
-- **Rule 8** — risk is permanent loss.
+- **Rule 1** — capital preservation (the umbrella goal).
+- **Rule 2** — value, not price.
+- **Rule 3** — margin of safety.
+- **Rule 4** — stock is a business.
 - **Rule 10** — default to indexing if no edge.
 
 The other five — circle of competence, quality, management, compounding, cycles — are the operating system that turns those five into action.
 
 ## 10 questions before any position
 
-1. Can I explain in one paragraph how this business makes money?
-2. Is the price meaningfully below my estimate of intrinsic value?
-3. If my estimate is 20–30% too high, am I still protected?
-4. Am I willing to hold this for five years or more?
-5. Is there a durable competitive advantage that a competitor cannot easily replicate?
-6. Does management think and allocate capital like a long-term owner?
-7. What could permanently impair this business — debt, dilution, regulation, technology, customer concentration?
+1. What is the **written permanent-loss scenario** for this position, and can I survive it?
+2. Can I explain in one paragraph how this business makes money?
+3. Is the price meaningfully below my estimate of intrinsic value?
+4. If my estimate is 20–30% too high, am I still protected?
+5. Am I willing to hold this for five years or more?
+6. Is there a durable competitive advantage that a competitor cannot easily replicate?
+7. Does management think and allocate capital like a long-term owner?
 8. Is my reason to buy analysis, or is it crowd participation in disguise?
 9. Is the position sized so I can hold through a 30–50% drawdown without selling?
 10. Do I genuinely have an edge here, or is broad low-cost diversification the more honest answer?
@@ -111,14 +112,14 @@ investment-agent-rules/
 └── rules/
     ├── common/                                       # the ten commandments
     │   ├── 00-index.md
-    │   ├── 01-buy-value-not-price.md
-    │   ├── 02-margin-of-safety.md
-    │   ├── 03-stock-is-a-business.md
-    │   ├── 04-circle-of-competence.md
-    │   ├── 05-quality-at-fair-price.md
-    │   ├── 06-management-and-capital-allocation.md
-    │   ├── 07-long-term-compounding.md
-    │   ├── 08-risk-is-permanent-loss.md
+    │   ├── 01-capital-preservation.md
+    │   ├── 02-buy-value-not-price.md
+    │   ├── 03-margin-of-safety.md
+    │   ├── 04-stock-is-a-business.md
+    │   ├── 05-circle-of-competence.md
+    │   ├── 06-quality-at-fair-price.md
+    │   ├── 07-management-and-capital-allocation.md
+    │   ├── 08-long-term-compounding.md
     │   ├── 09-cycles-and-crowd-psychology.md
     │   └── 10-default-to-low-cost-diversification.md
     ├── kr-equity/                                    # Korean-market specifics
@@ -131,6 +132,8 @@ investment-agent-rules/
 
 - **Imperative, not advisory.** Each rule is a directive and a gate, not a value statement.
 - **Pseudocode where it matters.** Principles are easy to nod at and hard to enforce. Each commandment ends with the gate that enforces it.
+- **Capital preservation is the umbrella, not just another rule.** Rule 1 names the goal; the other nine are the techniques that defend it. Margin of safety, position sizing, diversification, cycle awareness all exist because permanent loss is the only thing the agent absolutely cannot recover from.
+- **Permanent loss, not volatility.** The Marks refinement is embedded directly in Rule 1: drops in price with intact earnings are not risk events; they only become risk if the position is sized to force selling.
 - **Investing first, trading second.** Earlier versions emphasized per-trade discipline (stop distances, position sizing from stop, kill switches). This version emphasizes ownership-grade investing — value, business quality, management, compounding — with trading discipline as a supporting layer, not the core.
 - **Edge honesty is a first-class rule.** Most investors do not have a durable edge. Rule 10 turns that uncomfortable truth into a default behavior, not a disclaimer.
 - **Market-agnostic core + market-specific overlay.** The ten rules apply anywhere; the KR overlay encodes what is different about Korean cash equities (taxes, settlement, auctions, VI, KSD).
@@ -141,11 +144,11 @@ investment-agent-rules/
 The rules are distilled from repeated patterns across these sources:
 
 - Benjamin Graham, *The Intelligent Investor* — margin of safety, investor vs speculator, Mr. Market.
-- Warren Buffett, Berkshire Hathaway *Owner's Manual* and the annual shareholder letters — stocks as pieces of businesses, intrinsic value, management capital allocation.
+- Warren Buffett, Berkshire Hathaway *Owner's Manual* and the annual shareholder letters — Rule No. 1, stocks as pieces of businesses, intrinsic value, management capital allocation.
 - Charlie Munger, *Poor Charlie's Almanack* — multi-disciplinary mental models, inversion, do-not-interrupt-compounding.
 - Philip Fisher, *Common Stocks and Uncommon Profits* — quality, management, scuttlebutt research, pricing power.
 - Peter Lynch, *One Up on Wall Street* — invest in what you can understand; observation is the beginning of research, not the end.
-- Howard Marks, *The Most Important Thing* and Oaktree memos — second-level thinking, cycles, risk as permanent loss.
+- Howard Marks, *The Most Important Thing* and Oaktree memos — risk as permanent loss (not volatility), second-level thinking, cycles.
 - John C. Bogle, *The Little Book of Common Sense Investing* — costs, diversification, index humility.
 - Burton Malkiel, *A Random Walk Down Wall Street* — efficient markets and the case for the default.
 

@@ -1,4 +1,4 @@
-# 2. Demand a Margin of Safety
+# 3. Demand a Margin of Safety
 
 > "Confronted with the challenge to distill the secret of sound investment into three words, we venture the motto: MARGIN OF SAFETY."
 > — Benjamin Graham, *The Intelligent Investor*

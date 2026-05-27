@@ -1,4 +1,4 @@
-# 7. Compound Long-Term; Don't Get in the Way
+# 8. Compound Long-Term; Don't Get in the Way
 
 > "The first rule of compounding: Never interrupt it unnecessarily."
 > — Charlie Munger

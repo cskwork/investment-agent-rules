@@ -1,4 +1,4 @@
-# 4. Stay in Your Circle of Competence
+# 5. Stay in Your Circle of Competence
 
 > "Risk comes from not knowing what you're doing."
 > — Warren Buffett

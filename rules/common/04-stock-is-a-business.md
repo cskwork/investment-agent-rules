@@ -1,4 +1,4 @@
-# 3. A Stock Is a Piece of a Business
+# 4. A Stock Is a Piece of a Business
 
 > "If you aren't willing to own a stock for ten years, don't even think about owning it for ten minutes."
 > — Warren Buffett

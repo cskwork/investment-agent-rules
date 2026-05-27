@@ -1,4 +1,4 @@
-# 1. Buy Value, Not Price
+# 2. Buy Value, Not Price
 
 > "In the short run, the market is a voting machine; but in the long run, it is a weighing machine."
 > — Benjamin Graham
