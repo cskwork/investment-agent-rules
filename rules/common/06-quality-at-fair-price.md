@@ -1,4 +1,4 @@
-# 5. Quality at a Fair Price Beats Mediocrity at a Discount
+# 6. Quality at a Fair Price Beats Mediocrity at a Discount
 
 > "It's far better to buy a wonderful company at a fair price than a fair company at a wonderful price."
 > — Warren Buffett

@@ -4,9 +4,9 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Ten Commandments for AI Investment Agents</title>
-<meta name="description" content="Ten commandments distilled from Graham, Buffett, Munger, Fisher, Lynch, Marks, Bogle, Malkiel — for any AI agent that researches, sizes, or executes long-term investments." />
+<meta name="description" content="Ten commandments distilled from Graham, Buffett, Munger, Fisher, Lynch, Marks, Bogle, Malkiel. Capital preservation first; the other nine rules are the techniques that serve it." />
 <meta property="og:title" content="Ten Commandments for AI Investment Agents" />
-<meta property="og:description" content="Distilled from Graham, Buffett, Munger, Fisher, Lynch, Marks, Bogle, Malkiel — the masters who paid for the lessons." />
+<meta property="og:description" content="Capital preservation first. Then buy value with a margin of safety, compound it long-term, and admit when you do not have an edge." />
 <meta property="og:url" content="https://cskwork.github.io/investment-agent-rules/" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -50,7 +50,6 @@
   a:hover { color: var(--gold); }
   code, pre { font-family: var(--mono); }
 
-  /* ticker */
   .ticker {
     background: var(--ink);
     color: var(--paper);
@@ -206,7 +205,6 @@
     color: var(--ink-dim);
   }
 
-  /* rules — shareholder-letter style */
   .rules { display: flex; flex-direction: column; gap: 0; margin-top: 14px; }
   .rule {
     display: grid;
@@ -254,6 +252,19 @@
     font-size: 9px;
     color: var(--paper);
     background: var(--ink);
+    letter-spacing: 1.8px;
+    padding: 2px 7px;
+    vertical-align: 5px;
+    margin-left: 10px;
+    border-radius: 1px;
+    font-weight: 700;
+  }
+  .umbrella-badge {
+    display: inline-block;
+    font-family: var(--sans);
+    font-size: 9px;
+    color: #1a1300;
+    background: var(--gold);
     letter-spacing: 1.8px;
     padding: 2px 7px;
     vertical-align: 5px;
@@ -359,26 +370,26 @@
 
 <div class="ticker" aria-hidden="true">
   <div class="track">
-    <span class="item"><span class="sym">I</span><span class="name">Buy Value, Not Price</span><span class="pct">▲ Graham · Marks</span></span>
-    <span class="item"><span class="sym">II</span><span class="name">Margin of Safety</span><span class="pct">▲ Graham · Buffett</span></span>
-    <span class="item"><span class="sym">III</span><span class="name">Stock is a Business</span><span class="pct">▲ Buffett</span></span>
-    <span class="item"><span class="sym">IV</span><span class="name">Circle of Competence</span><span class="pct">▲ Buffett · Lynch</span></span>
-    <span class="item"><span class="sym">V</span><span class="name">Quality at Fair Price</span><span class="pct">▲ Fisher · Buffett</span></span>
-    <span class="item"><span class="sym">VI</span><span class="name">Management &amp; Capital Allocation</span><span class="pct">▲ Buffett</span></span>
-    <span class="item"><span class="sym">VII</span><span class="name">Compound Long-Term</span><span class="pct">▲ Munger · Buffett</span></span>
-    <span class="item"><span class="sym">VIII</span><span class="name">Risk = Permanent Loss</span><span class="pct">▲ Marks</span></span>
+    <span class="item"><span class="sym">I</span><span class="name">Capital Preservation First</span><span class="pct">▲ Buffett · Marks</span></span>
+    <span class="item"><span class="sym">II</span><span class="name">Buy Value, Not Price</span><span class="pct">▲ Graham · Marks</span></span>
+    <span class="item"><span class="sym">III</span><span class="name">Margin of Safety</span><span class="pct">▲ Graham · Buffett</span></span>
+    <span class="item"><span class="sym">IV</span><span class="name">Stock is a Business</span><span class="pct">▲ Buffett</span></span>
+    <span class="item"><span class="sym">V</span><span class="name">Circle of Competence</span><span class="pct">▲ Buffett · Lynch</span></span>
+    <span class="item"><span class="sym">VI</span><span class="name">Quality at Fair Price</span><span class="pct">▲ Fisher · Buffett</span></span>
+    <span class="item"><span class="sym">VII</span><span class="name">Management &amp; Capital Allocation</span><span class="pct">▲ Buffett</span></span>
+    <span class="item"><span class="sym">VIII</span><span class="name">Compound Long-Term</span><span class="pct">▲ Munger · Buffett</span></span>
     <span class="item"><span class="sym">IX</span><span class="name">Cycles &amp; Crowd Psychology</span><span class="pct">▲ Marks · Soros</span></span>
     <span class="item"><span class="sym">X</span><span class="name">Default to Diversification</span><span class="pct">▲ Bogle · Malkiel</span></span>
 
     <!-- duplicated for seamless loop -->
-    <span class="item"><span class="sym">I</span><span class="name">Buy Value, Not Price</span><span class="pct">▲ Graham · Marks</span></span>
-    <span class="item"><span class="sym">II</span><span class="name">Margin of Safety</span><span class="pct">▲ Graham · Buffett</span></span>
-    <span class="item"><span class="sym">III</span><span class="name">Stock is a Business</span><span class="pct">▲ Buffett</span></span>
-    <span class="item"><span class="sym">IV</span><span class="name">Circle of Competence</span><span class="pct">▲ Buffett · Lynch</span></span>
-    <span class="item"><span class="sym">V</span><span class="name">Quality at Fair Price</span><span class="pct">▲ Fisher · Buffett</span></span>
-    <span class="item"><span class="sym">VI</span><span class="name">Management &amp; Capital Allocation</span><span class="pct">▲ Buffett</span></span>
-    <span class="item"><span class="sym">VII</span><span class="name">Compound Long-Term</span><span class="pct">▲ Munger · Buffett</span></span>
-    <span class="item"><span class="sym">VIII</span><span class="name">Risk = Permanent Loss</span><span class="pct">▲ Marks</span></span>
+    <span class="item"><span class="sym">I</span><span class="name">Capital Preservation First</span><span class="pct">▲ Buffett · Marks</span></span>
+    <span class="item"><span class="sym">II</span><span class="name">Buy Value, Not Price</span><span class="pct">▲ Graham · Marks</span></span>
+    <span class="item"><span class="sym">III</span><span class="name">Margin of Safety</span><span class="pct">▲ Graham · Buffett</span></span>
+    <span class="item"><span class="sym">IV</span><span class="name">Stock is a Business</span><span class="pct">▲ Buffett</span></span>
+    <span class="item"><span class="sym">V</span><span class="name">Circle of Competence</span><span class="pct">▲ Buffett · Lynch</span></span>
+    <span class="item"><span class="sym">VI</span><span class="name">Quality at Fair Price</span><span class="pct">▲ Fisher · Buffett</span></span>
+    <span class="item"><span class="sym">VII</span><span class="name">Management &amp; Capital Allocation</span><span class="pct">▲ Buffett</span></span>
+    <span class="item"><span class="sym">VIII</span><span class="name">Compound Long-Term</span><span class="pct">▲ Munger · Buffett</span></span>
     <span class="item"><span class="sym">IX</span><span class="name">Cycles &amp; Crowd Psychology</span><span class="pct">▲ Marks · Soros</span></span>
     <span class="item"><span class="sym">X</span><span class="name">Default to Diversification</span><span class="pct">▲ Bogle · Malkiel</span></span>
   </div>
@@ -399,19 +410,19 @@
   <div class="eyebrow" data-i18n-ko>가치투자의 거장들에게서 추출한</div>
   <div class="eyebrow" data-i18n-en>Distilled from the masters</div>
 
-  <h1 data-i18n-ko>가치를 사고, 안전마진을 두고,<br/><em>오래</em> 보유한다.</h1>
-  <h1 data-i18n-en>Buy value. Demand a margin.<br/>Hold <em>long enough</em>.</h1>
+  <h1 data-i18n-ko>먼저 <em>잃지 않는다.</em><br/>그다음에 복리.</h1>
+  <h1 data-i18n-en>Rule No. 1: <em>do not lose money.</em><br/>Then compound.</h1>
 
   <p class="lead" data-i18n-ko>
-    훌륭한 투자는 “이해 가능한 우량 자산을 내재가치보다 싸게, 안전마진을 두고, 감정과 비용을 통제하며, 장기 보유하는 것”입니다. 다만 스스로 우위가 없다고 판단되면, 저비용·분산·장기 보유가 최선의 기본값입니다.
+    훌륭한 투자는 “자본을 먼저 지키고, 이해 가능한 우량 자산을 내재가치보다 싸게, 안전마진을 두고, 감정과 비용을 통제하며, 장기 보유하는 것”입니다. 다만 스스로 우위가 없다고 판단되면, 저비용·분산·장기 보유가 최선의 기본값입니다.
   </p>
   <p class="lead" data-i18n-en>
-    Great investing is buying an understandable, high-quality asset below intrinsic value, with a margin of safety, holding it long enough to compound, controlling emotion and costs along the way — and, when none of that genuinely applies, defaulting to low-cost, broad, diversified ownership.
+    Great investing is preserving capital first, then buying understandable, high-quality assets below intrinsic value with a margin of safety, holding them long enough to compound, controlling emotion and costs along the way — and, when none of that genuinely applies, defaulting to low-cost, broad, diversified ownership.
   </p>
 
   <div class="byline">
-    <span data-i18n-ko><b>Graham · Buffett · Munger · Fisher · Lynch · Marks · Bogle · Malkiel.</b> 10계명. 한국 시장 오버레이 1개. 투자 에이전트 enforcement 맵 1개. 군더더기 없음.</span>
-    <span data-i18n-en><b>Graham · Buffett · Munger · Fisher · Lynch · Marks · Bogle · Malkiel.</b> Ten rules. One Korean-market overlay. One enforcement map. No fluff.</span>
+    <span data-i18n-ko><b>Graham · Buffett · Munger · Fisher · Lynch · Marks · Bogle · Malkiel.</b> 10계명. Rule 1은 우산, 나머지 9개는 그 우산을 지키는 기법. 한국 시장 오버레이 1개. 투자 에이전트 enforcement 맵 1개.</span>
+    <span data-i18n-en><b>Graham · Buffett · Munger · Fisher · Lynch · Marks · Bogle · Malkiel.</b> Ten rules. Rule 1 is the umbrella; the other nine are the techniques that serve it. One Korean-market overlay. One enforcement map.</span>
   </div>
 
   <div class="cta">
@@ -429,20 +440,18 @@
   <div class="hr"></div>
 
   <blockquote class="epigraph">
-    <span data-i18n-ko>“훌륭한 투자는 똑똑한 예측의 게임이 아니라, 틀릴 가능성을 인정하고도 살아남도록 설계하는 게임이다.”</span>
-    <span data-i18n-en>“Great investing is not a game of brilliant prediction. It is a game of designing a process that survives being wrong.”</span>
-    <cite data-i18n-ko>— 이 문서의 마지막 줄</cite>
-    <cite data-i18n-en>— the last line of this document</cite>
+    <span data-i18n-ko>“Rule No. 1: Never lose money. Rule No. 2: Never forget rule No. 1.”</span>
+    <span data-i18n-en>“Rule No. 1: Never lose money. Rule No. 2: Never forget rule No. 1.”</span>
+    <cite>— Warren Buffett</cite>
   </blockquote>
 
-  <!-- PILLARS -->
   <h2><span class="num" data-i18n-ko>I — 세 개의 기둥</span><span class="num" data-i18n-en>I — Three pillars</span></h2>
 
   <div class="pillars">
     <div class="pillar">
       <h5 data-i18n-ko>코어</h5><h5 data-i18n-en>Core</h5>
-      <p data-i18n-ko>시장 무관 10계명. 가치, 안전마진, 사업가 마인드, 품질, 경영진, 복리, 영구손실, 사이클, 우위 정직성.</p>
-      <p data-i18n-en>Ten market-agnostic rules. Value, margin, owner-mindset, quality, management, compounding, permanent loss, cycles, edge honesty.</p>
+      <p data-i18n-ko>시장 무관 10계명. 자본 보존(우산), 가치, 안전마진, 사업가 마인드, 능력범위, 품질, 경영진, 복리, 사이클, 우위 정직성.</p>
+      <p data-i18n-en>Ten market-agnostic rules. Capital preservation (the umbrella), value, margin, owner-mindset, circle, quality, management, compounding, cycles, edge honesty.</p>
     </div>
     <div class="pillar">
       <h5>KR Equity Overlay</h5>
@@ -456,52 +465,51 @@
     </div>
   </div>
 
-  <!-- RULES -->
   <h2><span class="num" data-i18n-ko>II — 10계명</span><span class="num" data-i18n-en>II — The Ten Commandments</span></h2>
 
-  <p data-i18n-ko>다섯 개에는 <span class="core-badge" style="vertical-align:1px;margin:0;">CORE</span> 표시. 다른 모든 룰은 이 다섯 가지를 실행 가능하게 만드는 운영체제입니다.</p>
-  <p data-i18n-en>Five carry a <span class="core-badge" style="vertical-align:1px;margin:0;">CORE</span> mark. The rest are the operating system that turns those five into action.</p>
+  <p data-i18n-ko>Rule 1은 <span class="umbrella-badge" style="vertical-align:1px;margin:0;">UMBRELLA</span> — 모든 다른 룰을 묶는 목표. 그 외 다섯 개에는 <span class="core-badge" style="vertical-align:1px;margin:0;">CORE</span> 표시 — 우산을 지키는 가장 중요한 기법들. 나머지 네 개는 운영체제입니다.</p>
+  <p data-i18n-en>Rule 1 is the <span class="umbrella-badge" style="vertical-align:1px;margin:0;">UMBRELLA</span> — the goal every other rule serves. Four more carry a <span class="core-badge" style="vertical-align:1px;margin:0;">CORE</span> mark — the most important techniques defending the umbrella. The other four are the operating system.</p>
 
   <div class="rules" data-i18n-ko>
     <div class="rule core"><div class="num">I</div><div>
+      <h4>자본 보존이 먼저.<span class="umbrella-badge">UMBRELLA</span></h4>
+      <p>영구 손실 금지. 자본 보존은 목표이자 우산이고, 나머지 아홉 가지는 그것을 지키는 기법이다. 중요한 손실은 변동성이 아니라 영구 손실 — 다만 강제 매도하는 사이즈로 들어가면 변동성이 영구손실로 변한다.</p>
+      <span class="attrib">Buffett · Rule No. 1 · Marks</span>
+    </div></div>
+    <div class="rule core"><div class="num">II</div><div>
       <h4>가격이 아니라 가치를 산다.<span class="core-badge">CORE</span></h4>
       <p>출발점은 “이 자산이 무엇을 벌 수 있는가”다. 가격은 할인폭을 정할 뿐, 논거가 아니다.</p>
       <span class="attrib">Graham · Marks</span>
     </div></div>
-    <div class="rule core"><div class="num">II</div><div>
+    <div class="rule core"><div class="num">III</div><div>
       <h4>안전마진 없이 사지 않는다.<span class="core-badge">CORE</span></h4>
       <p>내가 틀려도 살아남을 만큼 내재가치보다 충분히 낮게 사라. 입력값이 노이즈가 클수록 마진은 더 크게.</p>
       <span class="attrib">Graham · Buffett</span>
     </div></div>
-    <div class="rule core"><div class="num">III</div><div>
+    <div class="rule core"><div class="num">IV</div><div>
       <h4>주식은 사업의 일부다.<span class="core-badge">CORE</span></h4>
       <p>이 implied valuation에서 회사 전체를 살 의향이 있는가? 아니라면 주식 한 주도 사지 마라.</p>
       <span class="attrib">Buffett · Owner's Manual</span>
     </div></div>
-    <div class="rule"><div class="num">IV</div><div>
+    <div class="rule"><div class="num">V</div><div>
       <h4>능력의 범위 안에서만 투자한다.</h4>
       <p>매출, 고객, 경쟁, 무너뜨릴 요인을 한 문단으로 설명할 수 있는 것만 보유. “모른다”는 유효한 행동이다.</p>
       <span class="attrib">Buffett · Lynch</span>
     </div></div>
-    <div class="rule"><div class="num">V</div><div>
+    <div class="rule"><div class="num">VI</div><div>
       <h4>평범한 기업을 헐값에 사기보다, 훌륭한 기업을 합리적 가격에.</h4>
       <p>지속 가능한 해자, 사이클 전반의 높은 ROIC, 가격결정력, 긴 재투자 활주로. 싸다는 건 바닥이고, 품질이 곱셈이다.</p>
       <span class="attrib">Fisher · Buffett · Munger</span>
     </div></div>
-    <div class="rule"><div class="num">VI</div><div>
+    <div class="rule"><div class="num">VII</div><div>
       <h4>경영진과 자본배분을 검증한다.</h4>
       <p>현금의 운명은 경영진이 결정한다. 내부자 지분, 자사주 매입 가격, 인수합병 성과, 희석, 부채 사용, 주주 커뮤니케이션을 본다.</p>
       <span class="attrib">Buffett</span>
     </div></div>
-    <div class="rule"><div class="num">VII</div><div>
+    <div class="rule"><div class="num">VIII</div><div>
       <h4>장기 복리를 방해하지 마라.</h4>
       <p>매도 사유 세 가지만 허용: 가설이 틀렸을 때, 사업 품질이 훼손됐을 때, 훨씬 더 좋은 기회가 생겼을 때. 시간은 시그널이 아니다.</p>
       <span class="attrib">Munger · Buffett</span>
-    </div></div>
-    <div class="rule core"><div class="num">VIII</div><div>
-      <h4>리스크는 변동성이 아니라 영구손실 가능성이다.<span class="core-badge">CORE</span></h4>
-      <p>변동성은 수수료, 영구손상은 복리의 끝. 30~50% 드로다운을 견딜 수 있는 사이즈로.</p>
-      <span class="attrib">Marks</span>
     </div></div>
     <div class="rule"><div class="num">IX</div><div>
       <h4>사이클과 군중심리를 역이용하라.</h4>
@@ -517,44 +525,44 @@
 
   <div class="rules" data-i18n-en>
     <div class="rule core"><div class="num">I</div><div>
+      <h4>Capital Preservation First.<span class="umbrella-badge">UMBRELLA</span></h4>
+      <p>Never permanent loss. Capital preservation is both the goal and the umbrella; the other nine rules are the techniques that defend it. The relevant kind of loss is permanent impairment, not volatility — but volatility becomes permanent loss if the position forces selling.</p>
+      <span class="attrib">Buffett · Rule No. 1 · Marks</span>
+    </div></div>
+    <div class="rule core"><div class="num">II</div><div>
       <h4>Buy Value, Not Price.<span class="core-badge">CORE</span></h4>
       <p>Start from "what can this earn?" The price sets the discount; it is not the argument.</p>
       <span class="attrib">Graham · Marks</span>
     </div></div>
-    <div class="rule core"><div class="num">II</div><div>
+    <div class="rule core"><div class="num">III</div><div>
       <h4>Demand a Margin of Safety.<span class="core-badge">CORE</span></h4>
       <p>Pay enough below intrinsic value that being wrong is survivable. The noisier the input, the wider the margin.</p>
       <span class="attrib">Graham · Buffett</span>
     </div></div>
-    <div class="rule core"><div class="num">III</div><div>
+    <div class="rule core"><div class="num">IV</div><div>
       <h4>A Stock Is a Piece of a Business.<span class="core-badge">CORE</span></h4>
       <p>Would you buy the whole company at this implied valuation? If not, do not buy a share of it either.</p>
       <span class="attrib">Buffett · Owner's Manual</span>
     </div></div>
-    <div class="rule"><div class="num">IV</div><div>
+    <div class="rule"><div class="num">V</div><div>
       <h4>Stay in Your Circle of Competence.</h4>
       <p>Only own what you can explain in one paragraph: revenue, customers, competition, destructors. "I don't know" is a valid action.</p>
       <span class="attrib">Buffett · Lynch</span>
     </div></div>
-    <div class="rule"><div class="num">V</div><div>
+    <div class="rule"><div class="num">VI</div><div>
       <h4>Quality at a Fair Price &gt; Mediocrity at a Discount.</h4>
       <p>Durable moat, high ROIC across cycles, pricing power, long reinvestment runway. Cheap is the floor; quality is the multiplier.</p>
       <span class="attrib">Fisher · Buffett · Munger</span>
     </div></div>
-    <div class="rule"><div class="num">VI</div><div>
+    <div class="rule"><div class="num">VII</div><div>
       <h4>Verify Management and Capital Allocation.</h4>
       <p>Owners decide what happens to the cash. Look at insider ownership, buyback prices, acquisition record, dilution, debt discipline, shareholder communication.</p>
       <span class="attrib">Buffett</span>
     </div></div>
-    <div class="rule"><div class="num">VII</div><div>
+    <div class="rule"><div class="num">VIII</div><div>
       <h4>Compound Long-Term; Don't Get in the Way.</h4>
       <p>Sell only when the thesis is broken, the quality is broken, or a clearly better opportunity exists. Time is not a signal.</p>
       <span class="attrib">Munger · Buffett</span>
-    </div></div>
-    <div class="rule core"><div class="num">VIII</div><div>
-      <h4>Risk Is the Probability of Permanent Loss, Not Volatility.<span class="core-badge">CORE</span></h4>
-      <p>Volatility is the fee; permanent impairment is the end of compounding. Size so you can hold through a 30–50% drawdown.</p>
-      <span class="attrib">Marks</span>
     </div></div>
     <div class="rule"><div class="num">IX</div><div>
       <h4>Use Cycles and Crowd Psychology Against Themselves.</h4>
@@ -568,36 +576,34 @@
     </div></div>
   </div>
 
-  <!-- CHECKLIST -->
   <h2><span class="num" data-i18n-ko>III — 매수 전 10문장 체크리스트</span><span class="num" data-i18n-en>III — 10 questions before any position</span></h2>
 
   <ol class="checklist" data-i18n-ko>
+    <li>이 포지션의 영구손실 시나리오를 글로 적었는가? 그 시나리오를 살아남을 수 있는가?</li>
     <li>이 사업이 돈을 버는 방식을 한 문단으로 설명할 수 있는가?</li>
     <li>현재 가격이 내재가치 추정치보다 의미 있게 낮은가?</li>
     <li>내 추정이 20~30% 틀려도 보호되는가?</li>
     <li>5년 이상 보유할 수 있는가?</li>
     <li>경쟁자가 쉽게 모방하기 어려운 지속 가능한 우위가 있는가?</li>
     <li>경영진은 장기 주주처럼 생각하고 자본을 쓰는가?</li>
-    <li>부채, 희석, 규제, 기술 변화, 단일 고객 의존성이 영구손실을 만들 수 있는가?</li>
     <li>매수 사유가 분석인가, 군중 추종을 분석으로 위장한 것인가?</li>
     <li>30~50% 드로다운을 견디고 보유할 수 있는 사이즈인가?</li>
     <li>정말 내가 우위가 있는가, 아니면 저비용 분산이 더 정직한 답인가?</li>
   </ol>
 
   <ol class="checklist" data-i18n-en>
+    <li>What is the written permanent-loss scenario for this position, and can I survive it?</li>
     <li>Can I explain in one paragraph how this business makes money?</li>
     <li>Is the price meaningfully below my estimate of intrinsic value?</li>
     <li>If my estimate is 20–30% too high, am I still protected?</li>
     <li>Am I willing to hold this for five years or more?</li>
     <li>Is there a durable competitive advantage a competitor cannot easily replicate?</li>
     <li>Does management think and allocate capital like a long-term owner?</li>
-    <li>What could permanently impair this business — debt, dilution, regulation, technology, customer concentration?</li>
     <li>Is my reason to buy analysis, or is it crowd participation in disguise?</li>
     <li>Is the position sized so I can hold through a 30–50% drawdown without selling?</li>
     <li>Do I genuinely have an edge here, or is broad low-cost diversification the more honest answer?</li>
   </ol>
 
-  <!-- INSTALL -->
   <h2><span class="num" data-i18n-ko>IV — 설치</span><span class="num" data-i18n-en>IV — Install</span></h2>
 
   <h3 data-i18n-ko>한 줄 설치 (권장)</h3>
@@ -622,21 +628,19 @@ cd ~/investment-agent-rules &amp;&amp; ./install.sh</pre>
 
 INVESTMENT_RULES_DEST=~/my/path ./install.sh</pre>
 
-  <!-- REFERENCES -->
   <h2><span class="num" data-i18n-ko>V — 참고 문헌</span><span class="num" data-i18n-en>V — References</span></h2>
 
   <ul>
     <li>Benjamin Graham, <em>The Intelligent Investor</em> — <span data-i18n-ko>안전마진, 투자자 vs 투기자, Mr. Market.</span><span data-i18n-en>margin of safety, investor vs speculator, Mr. Market.</span></li>
-    <li>Warren Buffett, Berkshire Hathaway <em>Owner's Manual</em> &amp; <span data-i18n-ko>연례 주주서한 — 주식은 사업의 일부, 내재가치, 자본배분.</span><span data-i18n-en>annual shareholder letters — stocks as pieces of businesses, intrinsic value, capital allocation.</span></li>
+    <li>Warren Buffett, Berkshire Hathaway <em>Owner's Manual</em> &amp; <span data-i18n-ko>연례 주주서한 — Rule No. 1, 주식은 사업의 일부, 내재가치, 자본배분.</span><span data-i18n-en>annual shareholder letters — Rule No. 1, stocks as pieces of businesses, intrinsic value, capital allocation.</span></li>
     <li>Charlie Munger, <em>Poor Charlie's Almanack</em> — <span data-i18n-ko>다학제 정신모형, 역발상, “복리를 끊지 마라”.</span><span data-i18n-en>multi-disciplinary mental models, inversion, "never interrupt compounding."</span></li>
     <li>Philip Fisher, <em>Common Stocks and Uncommon Profits</em> — <span data-i18n-ko>품질, 경영진, 스커틀버트 리서치, 가격결정력.</span><span data-i18n-en>quality, management, scuttlebutt, pricing power.</span></li>
     <li>Peter Lynch, <em>One Up on Wall Street</em> — <span data-i18n-ko>관찰은 리서치의 시작이지 끝이 아니다.</span><span data-i18n-en>observation is the beginning of research, not the end.</span></li>
-    <li>Howard Marks, <em>The Most Important Thing</em> &amp; Oaktree memos — <span data-i18n-ko>2차원적 사고, 사이클, 영구손실로서의 리스크.</span><span data-i18n-en>second-level thinking, cycles, risk as permanent loss.</span></li>
+    <li>Howard Marks, <em>The Most Important Thing</em> &amp; Oaktree memos — <span data-i18n-ko>영구손실로서의 리스크(변동성 X), 2차원적 사고, 사이클.</span><span data-i18n-en>risk as permanent loss (not volatility), second-level thinking, cycles.</span></li>
     <li>John C. Bogle, <em>The Little Book of Common Sense Investing</em> — <span data-i18n-ko>비용, 분산, 인덱스 겸손.</span><span data-i18n-en>costs, diversification, index humility.</span></li>
     <li>Burton Malkiel, <em>A Random Walk Down Wall Street</em> — <span data-i18n-ko>효율적 시장과 기본값 전략의 근거.</span><span data-i18n-en>efficient markets and the case for the default.</span></li>
   </ul>
 
-  <!-- RELATED -->
   <h2><span class="num" data-i18n-ko>VI — 관련 자료</span><span class="num" data-i18n-en>VI — Related</span></h2>
 
   <ul>
@@ -645,12 +649,11 @@ INVESTMENT_RULES_DEST=~/my/path ./install.sh</pre>
     <li><a href="https://github.com/cskwork/planning-doc-rules" target="_blank" rel="noopener">planning-doc-rules</a> — <span data-i18n-ko>기획서 작성 10원칙</span><span data-i18n-en>Ten Rules for Writing a Planning Document</span></li>
   </ul>
 
-  <!-- VERDICT -->
   <div class="verdict">
     <h3 data-i18n-ko>최종 원칙</h3>
     <h3 data-i18n-en>Final principle</h3>
-    <p data-i18n-ko>훌륭한 투자는 <em>똑똑한 예측의 게임이 아니다.</em> 틀릴 가능성을 인정하고도 살아남도록 설계하고, 그렇게 살아남은 결정이 충분히 오래 복리로 일하게 두는 게임이다.</p>
-    <p data-i18n-en>Great investing is <em>not a game of brilliant prediction.</em> It is a game of designing a process that survives being wrong — and lets the right decisions compound for long enough to matter.</p>
+    <p data-i18n-ko>훌륭한 투자는 <em>똑똑한 예측의 게임이 아니다.</em> 틀릴 가능성을 인정하고도 살아남도록 설계하고, 그렇게 살아남은 결정이 충분히 오래 복리로 일하게 두는 게임이다. <em>자본 보존이 목표이고, 나머지 아홉 가지는 그 목표를 지키는 방법이다.</em></p>
+    <p data-i18n-en>Great investing is <em>not a game of brilliant prediction.</em> It is a game of designing a process that survives being wrong — and lets the right decisions compound for long enough to matter. <em>Capital preservation is the goal; the other nine rules are the means.</em></p>
   </div>
 
   <div class="disclaimer">
@@ -663,8 +666,8 @@ INVESTMENT_RULES_DEST=~/my/path ./install.sh</pre>
 
 <footer class="site">
   <div>
-    <span data-i18n-ko>가치, 안전마진, 사업, 영구손실, 우위 정직성 — 다섯 가지가 코어. 나머지는 운영체제.</span>
-    <span data-i18n-en>Value, margin, business, permanent loss, edge honesty — five are the core. The rest is the operating system.</span>
+    <span data-i18n-ko>자본 보존이 우산. 가치, 마진, 사업, 우위 정직성이 코어. 나머지는 운영체제.</span>
+    <span data-i18n-en>Capital preservation is the umbrella. Value, margin, business, edge honesty are core. The rest is the operating system.</span>
   </div>
   <div style="margin-top: 8px;">
     MIT · <a href="https://github.com/cskwork/investment-agent-rules">github.com/cskwork/investment-agent-rules</a>

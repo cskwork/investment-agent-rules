@@ -1,4 +1,4 @@
-# 6. Verify Management and Capital Allocation
+# 7. Verify Management and Capital Allocation
 
 > "When a management with a reputation for brilliance tackles a business with a reputation for bad economics, it is the reputation of the business that remains intact."
 > — Warren Buffett
