@@ -67,7 +67,7 @@ INVESTMENT_RULES_DEST=~/my/path ./install.sh
 2. **Buy Value, Not Price.** Start from "what can this earn?" The price sets the discount; it is not the argument. — *Graham, Marks*
 3. **Demand a Margin of Safety.** Pay enough below intrinsic value that being wrong is survivable. The noisier the input, the wider the margin. — *Graham, Buffett*
 4. **A Stock Is a Piece of a Business.** Would you buy the whole company at this implied valuation? If not, do not buy a share of it either. — *Buffett (Owner's Manual)*
-5. **Stay in Your Circle of Competence.** Only own what you can explain in one paragraph: revenue, customers, competition, destructors. "I don't know" is a valid action. — *Buffett, Lynch*
+5. **Stay in Your Circle of Competence.** Only own what you can explain in one paragraph — revenue, customers, competition, and permanent-loss scenarios. If you cannot, pass; passing is a decision, not a failure. — *Buffett, Lynch*
 6. **Quality at a Fair Price Beats Mediocrity at a Discount.** Durable moat, high ROIC across cycles, pricing power, long reinvestment runway. Cheap is the floor; quality is the multiplier. — *Fisher, Buffett, Munger*
 7. **Verify Management and Capital Allocation.** Owners decide what happens to the cash. Look at insider ownership, buyback prices, acquisition track record, dilution, debt discipline, shareholder communication. — *Buffett*
 8. **Compound Long-Term; Don't Get in the Way.** Sell only when the thesis is broken, the quality is broken, or a clearly better opportunity exists. Time is not a signal. — *Munger, Buffett*

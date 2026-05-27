@@ -19,9 +19,9 @@ An LLM-driven agent has the same problem with sharper edges: it will happily rea
 ## Checklist
 
 - [ ] The universe of investable assets is *whitelisted* — not "anything the broker lists."
-- [ ] For each name in the universe, the agent can answer: what drives revenue, who the customers are, who competes, what could destroy the business.
+- [ ] For each name in the universe, the agent can answer: what drives revenue, who the customers are, who competes, and what could permanently impair the business.
 - [ ] Adding a new name requires explicit onboarding (history, business understanding, key risks) before it becomes investable.
-- [ ] "I don't know" is a valid action and is preferred to a low-conviction position.
+- [ ] If the agent cannot explain a name in plain language, it passes. Passing is a decision, not a failure — and is preferred to a low-conviction position.
 - [ ] The agent does not promote a hunch into a thesis by adding more research-flavored words.
 
 ## How an AI investment agent enforces this
