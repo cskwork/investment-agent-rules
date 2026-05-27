@@ -6,25 +6,29 @@
 > "We do not view the company itself as the ultimate owner of our business assets but, instead, view the company as a conduit through which our shareholders own the assets."
 > — Berkshire Hathaway *Owner's Manual*
 
+## In short
+
+A share of stock is a small slice of a real company that hires people, signs leases, ships product, and makes money. Before you buy a share, ask: "Would I buy the whole company at this price?" If no, do not buy one share either.
+
 ## Why
 
-A stock is not a flashing line on a screen. It is a fractional ownership claim on a real business that hires people, signs leases, ships product, fights competitors, and produces cash. The lifetime value of that ownership is what determines long-term returns. Everything else is noise on top of that signal.
+A stock is not a flashing line on a screen. It is part-ownership of a real business with employees, customers, contracts, and competitors, producing cash year after year. The value of that ownership across its lifetime is what determines long-term returns. Everything else is noise on top of that signal.
 
 The owner's mindset reframes every decision:
 
-- "Do I want to buy this company?" — not "do I want to buy this ticker?"
-- "Would I hold it through five years of closed markets?" — not "what's the chart telling me this week?"
-- "Am I happy if the price falls 30% next month and the business is unchanged?" — if the answer is no, the original purchase was speculation, not investment.
+- "Do I want to buy this *company*?" — not "do I want to buy this *ticker*?"
+- "Would I hold it through five years of closed markets?" — not "what does the chart say this week?"
+- "If the price falls 30% next month and the business is unchanged, am I happy?" — if the honest answer is no, what you bought was speculation, not investment.
 
-An agent that thinks in tickers and price moves will buy and sell the same business many times for no reason. An agent that thinks in businesses will hold what is working and only act when the business changes.
+An agent that thinks in tickers and price moves will buy and sell the same business many times for no reason. An agent that thinks in businesses will hold what is working and only act when the business itself has changed.
 
 ## Checklist
 
-- [ ] Every proposed buy is described as "buy a piece of this business at this implied valuation," not "buy this ticker because of this signal."
-- [ ] The agent can answer in one paragraph: what the company sells, who pays, who competes, what scales.
-- [ ] The agent is comfortable with the position if the market closes for five years.
-- [ ] Price-driven sells (e.g., "it dropped 10%") are blocked unless the business itself has materially changed.
-- [ ] Position size respects "how much of this *business* do I want to own?" — not "how much exposure to this ticker can I justify?"
+- [ ] Every proposed buy is described as "buy a piece of this *business* at this implied valuation" — not "buy this ticker because of this signal".
+- [ ] The agent can answer in one paragraph: what the company sells, who pays for it, who competes, what scales.
+- [ ] The agent is comfortable with the position even if the market closed for five years.
+- [ ] Selling because "the price dropped" is blocked unless the business itself has changed materially.
+- [ ] Position size answers "how much of this *business* do I want to own?" — not "how much exposure to this ticker can I justify?"
 
 ## How an AI investment agent enforces this
 
@@ -39,4 +43,4 @@ def passes_ownership_test(proposal):
     return Allow()
 ```
 
-If you would not buy the whole company at this implied valuation, do not buy a share of it either.
+If you would not buy the whole company at this implied price, do not buy a share of it either.

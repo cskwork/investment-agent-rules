@@ -6,25 +6,37 @@
 > "The job of the CEO is capital allocation."
 > — Warren Buffett, paraphrased across many letters
 
+## In short
+
+The CEO decides what happens to the cash the business earns. A great business can be wrecked by a CEO who issues stock cheap, buys it back at peaks, takes on debt at the wrong time, or chases empire-building deals. Check the receipts before you trust them with your money.
+
 ## Why
 
-A great business can be destroyed by a CEO who issues stock cheap, buys back at peaks, borrows at the top of the cycle, makes empire-building acquisitions, or treats minority shareholders as a piggy bank. Conversely, an above-average business with a disciplined capital allocator quietly compounds for decades.
+A great business can still be destroyed by a CEO who issues new shares cheap, buys them back at the top, borrows at the top of the cycle, makes empire-building acquisitions, or treats minority shareholders as a piggy bank. The opposite is also true: an above-average business with a disciplined operator quietly compounds for decades.
 
-The reason this rule exists separately from "quality" (Rule 5) is that quality describes the *business*, and capital allocation describes the *use of the cash the business produces*. They are different variables, and the second one is easier for a single bad decision to wreck.
+The reason this gets its own rule, separate from "quality" (Rule 6), is that quality describes the *business*, and capital allocation describes the *use of the cash the business produces*. Two different variables — and the second is much easier for a single bad decision to wreck.
 
-There are five places earnings can go: reinvest in existing operations, acquire, pay down debt, pay dividends, buy back stock. A good allocator picks among these *based on the return available at the time*, not based on what is fashionable. A bad allocator buys back stock at peaks and issues it at troughs — destroying value at both ends.
+There are only five places earnings can go:
 
-For an AI investment agent, this is the rule that makes the difference between "the spreadsheet looks great" and "the owners actually got the cash."
+1. Reinvest into existing operations
+2. Acquire something
+3. Pay down debt
+4. Pay dividends
+5. Buy back stock
+
+A good capital allocator picks among these *based on the return available at the time*, not based on what is fashionable. A bad allocator buys back stock at peaks and issues it at troughs — destroying value at both ends.
+
+For an AI investment agent, this is the rule that separates "the spreadsheet looks great" from "the owners actually got the cash."
 
 ## Checklist
 
-- [ ] Insider ownership is meaningful and aligned (skin in the game, not just options grants).
+- [ ] Insider ownership is meaningful and aligned. Real skin in the game — not just options grants.
 - [ ] Capital allocation history is examined across at least one full cycle.
-- [ ] Buybacks: are they done at sensible valuations, or only when the stock is high and the bonus depends on it?
-- [ ] Acquisitions: how have past deals performed (IRR, write-downs, integration outcomes)?
-- [ ] Debt: is it used opportunistically and at sensible terms, or is the balance sheet stretched at the wrong point in the cycle?
-- [ ] Share count: is it stable or shrinking? Persistent dilution without proportional value creation is a red flag.
-- [ ] Management communication: does the letter to shareholders explain *why* capital was deployed where it was, or is it marketing copy?
+- [ ] **Buybacks**: are they done at sensible valuations, or only when the stock is high and the CEO's bonus depends on it?
+- [ ] **Acquisitions**: how have past deals actually performed (returns, write-downs, integration outcomes)?
+- [ ] **Debt**: used opportunistically at sensible terms, or stretched at the wrong point in the cycle?
+- [ ] **Share count**: stable or shrinking? Persistent dilution without matching value creation is a red flag.
+- [ ] **Management communication**: does the shareholder letter explain *why* the cash went where it did, or is it marketing copy?
 
 ## How an AI investment agent enforces this
 
