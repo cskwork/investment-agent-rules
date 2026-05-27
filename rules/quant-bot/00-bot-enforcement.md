@@ -1,15 +1,17 @@
-# Quant-Bot Enforcement Map
+# Investment Agent Enforcement Map
 
-How each of the Ten Commandments becomes deterministic code in an AI-driven trading bot.
+How each of the Ten Commandments becomes deterministic code in an AI-driven investment agent.
 
-LLMs reason. Code enforces. Anywhere an LLM is in the decision path, a deterministic gate sits *after* the LLM and *before* the broker. The LLM proposes; the gate disposes.
+LLMs reason. Code enforces. Anywhere an LLM is in the decision path, a deterministic gate sits *after* the LLM and *before* the broker (or the human investor). The LLM proposes; the gate disposes.
 
-## Architecture (the only diagram you need)
+This map is the same architecture used in trading systems, but the gates here are tuned for long-term investing rather than per-trade execution. The orientation has shifted from "stop-loss distance and position turnover" to "value gap, business quality, management discipline, and edge honesty."
+
+## Architecture
 
 ```
-   ┌──────────────┐    proposal     ┌──────────────┐   approved order   ┌──────────┐
-   │ LLM / signal │ ───────────────▶│ risk gates   │ ──────────────────▶│ broker   │
-   │  generator   │                 │ (this layer) │                    │ adapter  │
+   ┌──────────────┐    proposal     ┌──────────────┐   approved action  ┌──────────┐
+   │ LLM / signal │ ───────────────▶│ rule gates   │ ──────────────────▶│ broker / │
+   │  generator   │                 │ (this layer) │                    │ investor │
    └──────────────┘                 └──────┬───────┘                    └────┬─────┘
                                            │ rejects + reasons               │ fills
                                            ▼                                 ▼
@@ -25,41 +27,44 @@ Three properties matter:
 
 | # | Commandment | Deterministic gate | Reject reason codes |
 |---|-------------|--------------------|---------------------|
-| 1 | Capital preservation | `pre_trade_guard.can_open()` | `daily_loss_cap`, `per_trade_loss_cap`, `min_equity_floor` |
-| 2 | Margin of safety | `passes_margin_of_safety()` | `entry_above_fair_value`, `margin_too_thin_for_noise` |
-| 3 | Circle of competence | `in_circle(ticker)` | `not_in_universe`, `review_stale`, `liquidity_below_floor` |
-| 4 | Second-level thinking | `edge_check(signal, consensus)` | `no_edge_over_consensus`, `no_invalidation_written` |
-| 5 | Cycles & reflexivity | `regime_adjusted_size()`, `detect_reflexivity()` | `regime_haircut`, `reflexive_feedback_detected` |
-| 6 | Position sizing | `size_position()`, `asymmetry_ok()` | `reward_risk_below_2`, `position_above_cap` |
-| 7 | Concentration / diversification | `gross_cap_for_book()`, `conviction_concentration_ok()` | `correlation_cluster`, `unearned_concentration` |
-| 8 | Long-term compounding | `turnover_guard()`, `net_alpha_alive()`, `has_signal()` | `turnover_budget`, `negative_net_alpha`, `no_signal_no_trade` |
-| 9 | Process over outcome | `promote_to_live()`, `divergence_alarm()` | `oos_insufficient`, `live_diverges_from_expected` |
-| 10 | Behavioral discipline | `behavioral_brake()`, `rule_change_guard()` | `consecutive_losses`, `daily_dd`, `model_drift`, `immutable_during_session` |
+| 1 | Buy value, not price | `passes_value_thesis()` | `no_independent_value_thesis`, `price_disguised_as_value`, `thesis_too_short_term_for_compounding` |
+| 2 | Margin of safety | `passes_margin_of_safety()` | `entry_above_fair_value_minus_margin`, `margin_too_thin_for_noise` |
+| 3 | Stock is a business | `passes_ownership_test()` | `no_business_understanding`, `holding_period_too_short_for_ownership_mindset`, `sell_logic_is_price_only_not_business` |
+| 4 | Circle of competence | `in_circle()` | `not_in_universe`, `review_stale`, `no_business_model_summary` |
+| 5 | Quality at fair price | `passes_quality_test()` | `no_durable_advantage`, `roic_below_compounding_threshold`, `growth_not_decomposed`, `cheap_without_a_thesis_for_change` |
+| 6 | Management & capital allocation | `passes_management_test()` | `no_skin_in_the_game`, `persistent_dilution_without_value`, `value_destroying_acquisitions`, `buybacks_above_intrinsic_value`, `opaque_capital_allocation_communication` |
+| 7 | Long-term compounding | `can_sell()`, `turnover_guard()`, `has_action_trigger()` | `invalid_sell_reason`, `turnover_budget_exceeded`, `no_signal_no_action` |
+| 8 | Risk is permanent loss | `passes_permanent_loss_test()` | `no_permanent_loss_scenario`, `sized_to_force_selling_into_volatility`, `min_equity_floor_breached`, `single_factor_overexposure` |
+| 9 | Cycles & crowd psychology | `passes_second_level_test()`, `regime_adjusted_size()` | `no_consensus_view`, `no_differentiated_view`, `macro_forecast_as_stock_thesis`, `regime_haircut` |
+| 10 | Default to diversification if no edge | `has_genuine_edge()`, `default_strategy_for()` | `no_documented_edge`, `entertainment_is_not_edge`, `index_default_recommended` |
 
-Each gate maps to one file under `bot/risk/gates/` (suggested layout, not prescribed). Each rejection writes a row with `(timestamp, gate, reason_code, payload_hash)` so behaviour is auditable after the fact.
+Each gate maps to one file under `agent/risk/gates/` (suggested layout, not prescribed). Each rejection writes a row with `(timestamp, gate, reason_code, payload_hash)` so behavior is auditable after the fact.
 
 ## The non-negotiables
 
-These are not opinions. A bot that violates any of them is unsafe and must not run with real capital:
+These are not opinions. An agent that violates any of them is unsafe and must not run with real capital:
 
 1. **No silent overrides.** Every gate can be overridden by a human, but every override is signed, dated, logged, and visible in the next-day report.
-2. **No rule edits in-session.** Configuration changes during a live session are rejected by `rule_change_guard()`.
-3. **No "auto-tuning" against live P&L.** The bot does not change thresholds because it lost yesterday. Parameter changes go through the same OOS validation as the strategy itself.
-4. **Immutable, append-only log.** Signals, proposals, rejections, fills, P&L attributions — all written once, never edited.
+2. **No rule edits in-session.** Configuration changes during an active session are rejected by `rule_change_guard()`.
+3. **No "auto-tuning" against live P&L.** The agent does not change thresholds because the recent return was disappointing. Parameter changes go through the same out-of-sample validation as the strategy itself.
+4. **Immutable, append-only log.** Proposals, rejections, fills, P&L attributions — all written once, never edited.
 5. **A kill switch the operator can hit in under one second.** It cancels resting orders, blocks new entries, and leaves existing positions for human decision.
+6. **Edge honesty is a first-class gate.** Before any active strategy is allowed to deploy capital, `has_genuine_edge()` must return `True` with documented evidence. Otherwise the agent recommends the low-cost diversified default.
 
 ## What the LLM is allowed to do
 
-- Generate hypotheses (signals, theses, sizing suggestions).
+- Generate hypotheses (theses, valuations, quality assessments, sizing suggestions).
 - Explain decisions in natural language for the human.
 - Read logs and write post-mortems.
 - Edit configuration *outside* a live session, under version control.
+- Recommend "do nothing" or "buy the index" as legitimate outputs.
 
 ## What the LLM is not allowed to do
 
 - Bypass a gate by retrying with a different prompt until the order goes through.
-- Edit risk configuration during a live session.
+- Edit rule thresholds during a live session.
 - Send orders that have not passed the gates.
-- Mark its own homework — backtest validation runs in a separate process with separate code paths.
+- Mark its own homework — out-of-sample validation runs in a separate process with separate code paths.
+- Treat narrative agreement with the consensus as analysis.
 
-The Ten Commandments tell the bot what discipline looks like. This file is how the discipline is non-optional.
+The Ten Commandments tell the agent what discipline looks like. This file is how that discipline is non-optional.
