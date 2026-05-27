@@ -6,28 +6,33 @@
 > "Our favorite holding period is forever."
 > — Warren Buffett
 
+## In short
+
+The longest holds produce the most money. Every trade costs taxes, fees, and slippage. Sell only when (1) your original reason for buying turned out wrong, (2) the business itself got worse, or (3) you found something clearly better to put the money in. Time alone is not a reason.
+
 ## Why
 
-Compounding is multiplicative. Every interruption — a tax event, a round-trip on the spread, a forced sale at the wrong price — is a multiplicative leak. A 1% leak per turnover, run 50 times a year, is not a 50% leak; it is a 39% drag on the terminal value.
+Compounding is multiplicative. Every time you interrupt it — a tax event, a round-trip on the spread, a forced sale at the wrong price — you take a multiplicative bite out of the final number. A 1% leak per round trip, run 50 times a year, is not a 50% leak; it is roughly a 39% drag on the terminal value. Multiplicative losses are bigger than they look.
 
-Most of the long-term return on a quality compounder comes from holding it through periods when nothing interesting was happening. The temptation — to time the cycle, to harvest a gain, to "rotate" — costs taxes, spread, slippage, and the most expensive cost of all: not being there when the business takes its next leg up.
+Most of the long-term return on a quality compounder comes from holding it through periods when *nothing interesting was happening*. The temptation — to time the cycle, to "take some off the table", to rotate — costs taxes, spread, slippage, and the most expensive cost of all: not being there when the business takes its next leg up.
 
 The default behavior should be: hold longer than feels natural, sell less than feels exciting, do nothing more often than is comfortable.
 
-There are exactly three legitimate reasons to sell:
-1. The original thesis is broken — the facts that made you buy turned out to be wrong.
-2. The business quality has materially deteriorated — moat eroded, management changed, capital allocation broken (see Rules 5 and 6).
-3. A clearly superior opportunity exists, and selling this position is the cheapest way to fund it.
+There are only three legitimate reasons to sell:
 
-Price moving is not a reason. Boredom is not a reason. "It's been five years" is not a reason.
+1. **The original thesis is broken** — the facts that made you buy turned out to be wrong.
+2. **The business quality has materially deteriorated** — the moat is eroding, management changed for the worse, capital allocation has gone bad (see Rules 6 and 7).
+3. **A clearly superior opportunity exists** — and selling this position is the cheapest way to fund it.
+
+A price moving is not a reason. Boredom is not a reason. "It's been five years" is not a reason.
 
 ## Checklist
 
 - [ ] Every position declares its expected holding period (years, not months).
 - [ ] Sell triggers are written at purchase and limited to the three legitimate reasons above.
 - [ ] Realized round-trip cost (fees + tax + slippage) is tracked and compared to gross return.
-- [ ] Turnover budget is set in advance and enforced.
-- [ ] "Boredom" positions — proposed because nothing happened today — are blocked by a no-signal-no-action rule.
+- [ ] A turnover budget is set in advance and enforced.
+- [ ] "Boredom positions" — taken because nothing happened today — are blocked by a no-signal-no-action rule.
 - [ ] Tax efficiency is considered before any sell, especially in taxable accounts.
 
 ## How an AI investment agent enforces this

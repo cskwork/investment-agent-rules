@@ -1,12 +1,12 @@
 # Ten Commandments for AI Investment Agents
 
-A minimal contract for any AI agent that researches, proposes, sizes, or executes long-term investment positions.
+A short, plain-language operating manual for any AI agent that helps a human research, choose, size, or hold long-term investments.
 
-Distilled from Graham, Buffett, Munger, Fisher, Lynch, Marks, Bogle, and Malkiel. Each rule maps to a real failure mode that has been paid for in real money.
+These rules are not new ideas. They are what shows up over and over in the work of investors who actually made money for decades — Graham, Buffett, Munger, Fisher, Lynch, Marks, Bogle, Malkiel. Each rule here maps to a real mistake that real people have paid for.
 
-Read in order. Each rule has its own page with the *why*, a checklist, and a deterministic gate.
+Read in order. Each rule has its own page with a one-line summary in plain English, the *why* behind it, a checklist, and the code gate that enforces it.
 
-1. [Capital Preservation First](01-capital-preservation.md) — Buffett (Rule No. 1), Marks (risk as permanent loss)
+1. [Capital Preservation First](01-capital-preservation.md) — Buffett (Rule No. 1), Marks (risk = permanent loss, not volatility)
 2. [Buy Value, Not Price](02-buy-value-not-price.md) — Graham, Marks
 3. [Demand a Margin of Safety](03-margin-of-safety.md) — Graham, Buffett
 4. [A Stock Is a Piece of a Business](04-stock-is-a-business.md) — Buffett (Owner's Manual)
@@ -19,27 +19,29 @@ Read in order. Each rule has its own page with the *why*, a checklist, and a det
 
 ## The five that matter most
 
-If only five rules survive, these are the load-bearing ones:
+If only five rules survive, these are the ones that hold up the rest:
 
-- **Rule 1** — capital preservation (the umbrella goal — every other rule is a technique that serves it)
-- **Rule 2** — value, not price (the only reason long-term returns exist)
-- **Rule 3** — margin of safety (the only way to be wrong without being broken)
-- **Rule 4** — stock is a business (the only mindset that allows the other rules to work)
-- **Rule 10** — default to indexing if no edge (the honesty that prevents pretending the other nine apply when they do not)
+- **Rule 1** — *Do not lose money.* The umbrella goal. Every other rule is a technique that serves this one.
+- **Rule 2** — *Buy value, not price.* The only reason long-term returns exist in the first place.
+- **Rule 3** — *Margin of safety.* The only way to be wrong without being broken.
+- **Rule 4** — *A stock is a piece of a business.* The mindset that makes everything else work.
+- **Rule 10** — *If you don't have an edge, buy the index.* The honesty that prevents pretending the other nine apply when they do not.
 
 The remaining five — circle of competence, quality, management, compounding, cycles — are the operating system that turns those five into action.
 
 ## A 10-question checklist before any position
 
-1. What is the **written permanent-loss scenario** for this position, and can I survive it?
-2. Can I explain in one paragraph how this business makes money?
-3. Is the price meaningfully below my estimate of intrinsic value?
+Ask all ten. If you cannot answer one of them clearly, you are not ready to buy.
+
+1. What is the **written "how could this permanently lose money"** scenario for this position, and can I survive it?
+2. Can I explain in one paragraph how this business actually makes money?
+3. Is the price meaningfully below my estimate of what the business is worth?
 4. If my estimate is 20–30% too high, am I still protected?
 5. Am I willing to hold this for five years or more?
-6. Is there a durable competitive advantage that a competitor cannot easily replicate?
-7. Does management think and allocate capital like a long-term owner?
-8. Is my reason to buy analysis, or is it crowd participation in disguise?
-9. Is the position sized so I can hold through a 30–50% drawdown without selling?
+6. Is there a durable advantage that competitors cannot easily copy?
+7. Does management think and use cash like a long-term owner?
+8. Is my real reason to buy *analysis*, or am I just joining the crowd?
+9. Is the position sized so I can hold through a 30–50% drop without selling?
 10. Do I genuinely have an edge here, or is broad low-cost diversification the more honest answer?
 
 ## See also

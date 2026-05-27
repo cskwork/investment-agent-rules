@@ -6,21 +6,25 @@
 > "The relationship between price and value is the ultimate determinant of investment success."
 > — Howard Marks, *The Most Important Thing*
 
+## In short
+
+The right first question is "what can this business earn?" — not "what is the price doing today?" Price tells you how big the discount is. Value tells you whether there is anything to buy in the first place.
+
 ## Why
 
-The first question is not "what is the price doing?" It is "what can this asset earn over its lifetime, and what is that stream of earnings worth today?"
+Price is what someone is willing to pay this morning. Value is what the cash flows are worth across years and across cycles. They drift apart constantly. Long-term gains come from buying when value is higher than price. Long-term losses come from buying when price is higher than value, no matter how convincing the chart.
 
-Price is what someone is willing to pay this morning. Value is what the cash flows are worth across the cycle. They diverge constantly. Long-term returns come from buying when value exceeds price; long-term losses come from buying when price exceeds value, no matter how convincing the chart.
+If the agent ranks ideas by *price action* — momentum, "the market knows something", relative strength alone — it is a price agent, not an investment agent. Price is an input to the decision (it tells you how much of a discount you are getting). It is not the decision itself.
 
-An agent that ranks ideas by price action — momentum, "the market knows something", relative strength alone — is a price agent, not an investment agent. Price is an input to the decision (it sets the discount), not the decision itself.
+A common failure mode: a stock has been rising, and that rise is then used as evidence that it should keep rising. The chart starts to feel like an argument. It is not. Past price action is part of *price*; it has nothing to do with what the business can earn.
 
 ## Checklist
 
-- [ ] Every proposed position has a written intrinsic-value thesis: what the business earns, how stably, at what return on capital, for how long.
-- [ ] The thesis is grounded in cash flow or owner earnings, not multiples scraped from peers.
-- [ ] Price is used to size the *discount*, not to validate the thesis.
-- [ ] "It went up, therefore it must be right" is explicitly rejected as evidence.
-- [ ] When the agent cannot articulate value independently of price, the position is blocked.
+- [ ] Every proposed position has a written value thesis: what the business earns, how stably, at what return on its capital, for how long.
+- [ ] The value thesis is grounded in cash flow or owner earnings — not just "the stock trades at a lower P/E than peers".
+- [ ] Price is used only to decide *how big the discount is*, never to decide *whether* the business is worth owning.
+- [ ] "It went up, so it must be right" is explicitly rejected as evidence.
+- [ ] When the agent cannot describe the value without referring to price, the position is blocked.
 
 ## How an AI investment agent enforces this
 
@@ -35,4 +39,4 @@ def passes_value_thesis(proposal):
     return Allow()
 ```
 
-Value comes first. Price is the discount, not the argument.
+Value comes first. Price tells you how big the discount is.
